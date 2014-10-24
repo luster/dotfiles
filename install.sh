@@ -69,19 +69,19 @@ brew install pip-completion
 curl -L http://install.ohmyz.sh | sh
 sudo chsh -s $(whoami) $(which zsh)
 rm ~/.zshrc
-ln -s ~/.dotfiles/zshrc ~/.zshrc
-source ~/.zshrc
+# ln -s ~/.dotfiles/zshrc ~/.zshrc TODO: add zshrc
+# source ~/.zshrc
 
-# vim
-mkdir ~/.vim
-ln -s ~/.dotfiles/vimrc ~/.vim/vimrc
-ln -s ~/.vim/vimrc ~/.vimrc
+# vim TODO: add vimrc in right place, reconfigure
+# mkdir ~/.vim
+# ln -s ~/.dotfiles/vimrc ~/.vim/vimrc
+# ln -s ~/.vim/vimrc ~/.vimrc
 
 # vim setup
-vim +PluginInstall +qall
-cd ~/.vim/bundle/YouCompleteMe
-./install.sh --clang-completer
-cd
+# vim +PluginInstall +qall
+# cd ~/.vim/bundle/YouCompleteMe
+# ./install.sh --clang-completer
+# cd
 
 # iterm preferences TODO: add iterm2 prefs file
 # defaults write com.googlecode.iterm2 PrefsCustomFolder "/Users/$(whoami)/.dotfiles/"
