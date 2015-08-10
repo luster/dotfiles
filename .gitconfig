@@ -1,8 +1,8 @@
 [user]
-	name = Ethan Lusterman
+	name = Ethan
 	email = ethan.lusterman@gmail.com
 [core]
-	excludesfile = /Users/ethan/.gitignore
+	excludesfile = ~/.gitignore
 	editor = mvim -v
 	autocrlf = input
 [push]

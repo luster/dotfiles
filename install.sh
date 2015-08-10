@@ -40,7 +40,6 @@ brew install v8
 brew cask install audacity
 brew cask install dropbox
 brew cask install flux
-brew cask install google-chrome
 brew cask install iterm2
 brew cask install skype
 brew cask install spotify
@@ -59,19 +58,21 @@ brew install django-completion
 brew install pip-completion
 
 # Install oh-my-zsh, set zsh as default shell
-curl -L http://install.ohmyz.sh | sh
-sudo chsh -s $(whoami) $(which zsh)
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+if [ ! -d ~/.oh-my-zsh ]; then
+    curl -L http://install.ohmyz.sh | sh
+    sudo chsh -s $(whoami) $(which zsh)
+fi
+ln -s -f ~/.dotfiles/.zshrc ~/.zshrc
 
 # vim
-ln -s ~/.dotfiles/.vimrc ~/.vimrc
+ln -s -f ~/.dotfiles/.vimrc ~/.vimrc
 
 # tmux
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+ln -s -f ~/.dotfiles/.tmux.conf ~/.tmux.conf
 
 # global gitignore/config
-ln -s ~/.dotfiles/.gitignore ~/.gitignore
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s -f ~/.dotfiles/.gitignore ~/.gitignore
+ln -s -f ~/.dotfiles/.gitconfig ~/.gitconfig
 git config --global core.excludesfile '~/.gitignore'
 
 # configure git user
