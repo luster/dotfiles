@@ -25,6 +25,7 @@ brew install caskroom/cask/brew-cask
 brew install git
 brew install htop
 brew install macvim --override-system-vim
+brew install tmux
 brew install wget
 brew install zsh
 brew install zsh-completions
