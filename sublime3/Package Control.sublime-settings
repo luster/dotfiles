@@ -1,0 +1,43 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Color Scheme - Nice Blue Soda",
+		"Colorsublime",
+		"Copy Relative Path",
+		"Django",
+		"DocBlockr_Python",
+		"Git",
+		"GitDiffHelper",
+		"GitGutter",
+		"Github Tools",
+		"Gitignored File Excluder",
+		"HTML Extended",
+		"JSON Reindent",
+		"JsonTree",
+		"Package Control",
+		"PyDOC",
+		"Python Breakpoints",
+		"Python Checker",
+		"Python Fix Imports",
+		"Python Improved",
+		"Python PEP8 Autoformat",
+		"Python Unittest Helper",
+		"PythonTest",
+		"Sass",
+		"SqlBeautifier",
+		"SublimeCodeIntel",
+		"SublimeLinter-pep8",
+		"SyncedSideBar",
+		"Theme - Flatland",
+		"Theme - Soda",
+		"Theme - SoDaReloaded",
+		"Unittest (python)",
+		"Virtualenv",
+		"WhoCalled Function Finder"
+	]
+}
