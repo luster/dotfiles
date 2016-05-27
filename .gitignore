@@ -27,7 +27,7 @@
 # Logs and databases #
 ######################
 *.log
-*.sql
+#*.sql
 *.sqlite
 
 ######################
@@ -56,3 +56,10 @@ xcuserdata/
 
 *.pyc
 .gitattributes
+
+.env
+.project
+*.sublime-project
+*.sublime-workspace
+
+*.png

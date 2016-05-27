@@ -4,6 +4,8 @@
 " For multi-byte character support (CJK support, for example):
 "set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
 
+colorscheme dichromatic
+
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
 
 set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
@@ -27,7 +29,7 @@ set showmatch       " When a bracket is inserted, briefly jump to the matching
                     " screen. The time to show the match can be set with
                     " 'matchtime'.
 
-set hlsearch        " When there is a previous search pattern, highlight all
+"set hlsearch        " When there is a previous search pattern, highlight all
                     " its matches.
 
 set incsearch       " While typing a search command, show immediately where the
@@ -70,7 +72,24 @@ set background=dark " When set to 'dark', Vim will try to use colors that look
 
 set mouse=a         " Enable the use of the mouse.
 
+" basic
 filetype plugin indent on
 syntax on
-
 set backspace=indent,eol,start
+
+" Pathogen
+execute pathogen#infect()
+
+" :Explore style
+let g:netrw_liststyle=3
+
+" better navigation between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" split below and to the right, it's more natural :)
+set splitbelow
+set splitright
+

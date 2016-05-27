@@ -41,7 +41,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias vim="/usr/local/Cellar/macvim/7.4-73_1/bin/mvim -v"
+alias vim="/usr/local/Cellar/macvim/7.4-77/bin/mvim -v"
 alias vi="vim"
 alias git="hub"
 
@@ -79,4 +79,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 # tmuxinator
 export EDITOR='vim'
 export SHELL='zsh'
-source ~/.bin/tmuxinator.sh
+# source ~/.bin/tmuxinator.sh
+source /usr/local/opt/autoenv/activate.sh
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
